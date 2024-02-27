@@ -6,8 +6,10 @@ def main():
                                                  ' a difference.',)
     parser.add_argument('first_file')
     parser.add_argument('second_file')
+    parser.add_argument(
+            '-f', '--format', help='Set format of output')
     args = parser.parse_args()
-    print(args.accumulate(args.first_file))
+
 
 
 if __name__ == '__main__':
